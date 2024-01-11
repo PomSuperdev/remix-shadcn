@@ -1,8 +1,11 @@
-import Forms from "~/components/pages/form/page";
+import SettingsLayout from "../components/pages/form/layout";
+import { Outlet } from "@remix-run/react";
 export default function FormsPage() {
   return (
     <>
-      <Forms />
+      <SettingsLayout>
+        <Outlet />
+      </SettingsLayout>
     </>
   );
 }
